@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/*      set colors html     */
+html {
+    --backgroundColor: rgba(37, 37, 37, 1);
+    --backgroundSubColor: rgba(40, 40, 40, 1);
+    --ColorText: rgba(230, 230, 230, 1);
+    --ColorTextHover: rgba(22, 163, 206, .8);
+    --ColorIcons: rgba(230, 230, 230, 1);
+    --ColorAncora: rgba(255, 0, 200, 1);
+    --ColorAncoraHover: rgb(255, 61, 213);
+
+    font-size: 62.5%;
+}
+/*      Icons pre-sets      */
+
+.mail {
+    width: 1.9em;
+    height: 1.9em;
+    fill: var(--ColorIcons);
+}
+
+.mail:hover {
+    fill: var(--ColorAncoraHover);
+}
+
+/*      Styles Page     */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ColorText);
+    background: var(--backgroundColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 5.2em;
+    background: var(--backgroundSubColor);
+}
+
+.menu {
+    width: 19%;
+    height: 100%;
+    margin-left: 7%;
+    display: flex;
+    align-items: center;
+}
+
+.menu > ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.menu > ul > li > a {
+    font-size: 2rem;
+    color: var(--ColorText);
+}
+
+.menu > ul > li > a:hover {
+    color : var(--ColorTextHover)
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main > .title > h1 {
+    font-size: 3.8rem;
+    font-weight: 600;
+    margin: 15% 0% 15%;
+}
+
+.main > .about {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main > .about > .title-about {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0% 0% 1% 7%;
+    left: -31.1%;
+}
+
+.main > .about > .box-text{
+    width: 60%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+.main > .about > .box-text > .informations {
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+.main > .about > .box-text > .informations > span {
+    color: var(--ColorAncora);
+}
+
+.main > .about > .box-text > .informations > a {
+    color: var(--ColorAncora);
+}
+
+.main > .about > .box-text > .informations > a:hover {
+    color: var(--ColorAncoraHover);
+}
+
+footer {
+    width: 100%;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer {
+    width: 12%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.footer > p { 
+    font-size: 1.2rem;
+    font-size: 600;
+}

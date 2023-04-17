@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/*      set colors html     */
+html {
+    --backgroundColor: rgba(37, 37, 37, 1);
+    --backgroundSubColor: rgba(40, 40, 40, 1);
+    --ColorText: rgba(230, 230, 230, 1);
+    --ColorTextHover: rgba(22, 163, 206, .8);
+    --ColorIcons: rgba(230, 230, 230, 1);
+    --ColorAncora: rgba(255, 0, 200, 1);
+    --ColorAncoraHover: rgb(255, 61, 213);
+
+    font-size: 62.5%;
+}
+
+/*      Styles Page     */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ColorText);
+    background: var(--backgroundColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 5.2em;
+    background: var(--backgroundSubColor);
+}
+
+.menu {
+    width: 19%;
+    height: 100%;
+    margin-left: 7%;
+    display: flex;
+    align-items: center;
+}
+
+.menu > ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.menu > ul > li > a {
+    font-size: 2rem;
+    color: var(--ColorText);
+}
+
+.menu > ul > li > a:hover {
+    color : var(--ColorTextHover)
+}
+
+.main {
+    width: 100%;
+    height: auto;
+}
+
+.main > .main-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main > .main-header > .title {
+    font-size: 4.2rem;
+    margin: 5% 0% 3% 0%;
+    font-weight: 400;
+}
+
+.main > .about {
+    width: 100%;
+    height: 20vh;
+}
+
+.main > .about > .about-title {
+    position: relative;
+    font-size: 1.9rem;
+    left: 4%;
+    font-weight: 500;
+}
+
+.main > .about > ul > li {
+    position: relative;
+    left: 6%;
+}
+
+
+.main > .about > ul > li > a {
+    font-size: 1.4rem;
+    color: var(--ColorText);
+}
+
+.main > .about > ul > li > a:hover {
+    color: var(--ColorAncoraHover);
+}
